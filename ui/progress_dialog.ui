@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="AdwDialog" id="progress_dialog">
+    <property name="title">Loading Videos</property>
+    <property name="width-request">400</property>
+    <property name="height-request">150</property>
+    <property name="content">
+      <object class="AdwPreferencesPage">
+        <property name="margin-top">24</property>
+        <property name="margin-bottom">24</property>
+        <property name="margin-start">24</property>
+        <property name="margin-end">24</property>
+        <child>
+          <object class="AdwPreferencesGroup">
+            <child>
+              <object class="GtkLabel" id="message_label">
+                <property name="label">Scanning folder...</property>
+                <property name="wrap">True</property>
+                <property name="margin-bottom">12</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkProgressBar" id="progress_bar">
+                <property name="hexpand">True</property>
+                <property name="show-text">True</property>
+                <property name="margin-bottom">12</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="cancel_button">
+                <property name="label">Cancel</property>
+                <property name="halign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+  </object>
+</interface> 

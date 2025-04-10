@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "localdemy"
+version = "0.1.0"
+description = "A native desktop application for organizing and tracking progress through locally stored educational videos"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Localdemy Team", email = "info@localdemy.org"}
+]
+license = {text = "GPL-3.0-or-later"}
+dependencies = [
+    "PyGObject>=3.42.0",
+]
+
+[project.scripts]
+localdemy = "localdemy.main:main"
+
+[tool.setuptools]
+packages = ["localdemy"]
+package-dir = {"" = "src"}
+
+[tool.black]
+line-length = 88
+target-version = ["py38"] 
