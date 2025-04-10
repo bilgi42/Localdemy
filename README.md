@@ -18,3 +18,6 @@ Ubuntu/Debian:
 
 I use fedora but I'm not sure for the requirements 💀
 
+# Tech Stack
+
+Something something GTK and SQLite i guess 🤷‍♀️,idk you'll figure it out or not. It is a simple software for a specific problem so who cares
